@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+         <script>
+            function calcularCubo()
+            {
+            var v=document.getElementById('num').value;
+            v=parseInt(v);
+            var cubo=v*v*v;
+              alert(cubo);
+          }
+        </script>
+        <form action ="AlCubo" method ="get">
+            <p>Ingrese un valor:<input  type="text" id="num"></p>
+            <br>
+            <input type="submit" value="Calcular cubo" onClick="calcularCubo()">
+        </form>
+    </body>
+</html>
+<!--
+ <script>
+            function calcularCubo()
+            {
+            var v=document.getElementById('num').value;
+            v=parseInt(v);
+            var cubo=v*v*v;
+              alert(cubo);
+          }
+</script>
+         <form action ="AlCubo" method ="get">
+                  Ingrese un valor:
+                 <input type="text" id="num">
+                <br>
+               <input type="button" value="Calcular cubo" onClick="calcularCubo()">
+         </form>
+-->

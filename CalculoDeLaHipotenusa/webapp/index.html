@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            funtion Hipotenusa(){
+                let Num1 = document.getElementById("Num1").value;
+                let Num2 = document.getElementById("Num2").value;
+                if(Num1 == || Num2 ==""){
+                    alert("Error ingresa dos datos numerico..");
+                }else{
+                    if(!/^([0-10])*$/.test(Num1) || !/^([0-10])*$/.test(Num2)){
+                             alert("Los campos son solo numerico...");
+                    }else{
+                        document.getElementById("Enviar").submit();
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Calculo de la Hipotenusa!</h1>
+    <form id ="Enviar" action="Hipotenusa" method ="get">
+        <p>Ingrese el primer numero del cateto: <input id="Num1" type="number" name="Nu1"></p>
+         <p>Ingrese el segundo numero del cateto: <input id="Num2" type="number" name="Nu2"></p>
+         <input type="submit" value="Enviar" onclick="Hipotenusa()" >
+    </form>
+    </body>
+</html>
